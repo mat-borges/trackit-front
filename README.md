@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# TrackIt Front-end
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
+O Track It é um projeto desenvolvido para ajudar os usuários a monitorar e registrar seus hábitos diários. Utiliza tecnologias como React, Redux Toolkit, TypeScript, Ant Design, React Router, React Hook Form e Axios para fornecer uma experiência de usuário eficiente e amigável.
 
-## Available Scripts
+## Tecnologias Utilizadas
+- **React**: Biblioteca principal para construção de interfaces de usuário.
+- **Redux Toolkit**: Ferramenta oficial recomendada para gerenciamento de estado com Redux.
+- **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript.
+- **Ant Design**: Biblioteca de componentes de interface de usuário.
+- **React Router**: Biblioteca para roteamento de páginas no React.
+- **React Hook Form**: Biblioteca para gerenciar formulários de forma eficiente.
+- **Axios**: Cliente HTTP para fazer requisições à API.
 
-In the project directory, you can run:
+## Funcionalidades Principais
+1. **Autenticação de Usuários:**
+   - Permite que os usuários façam login e se registrem na aplicação.
+2. **Gestão de Hábitos:**
+   - Permite que os usuários visualizem, adicionem, editem e excluam hábitos.
+3. **Rastreamento Diário:**
+   - Permite que os usuários registrem o progresso diário de seus hábitos.
+4. **Dashboard de Estatísticas:**
+   - Apresenta estatísticas e métricas relacionadas aos hábitos dos usuários.
+5. **Interface Responsiva:**
+   - Garante uma experiência consistente em diferentes dispositivos e tamanhos de tela.
 
-### `npm start`
+## Fluxo de Dados
+1. **Autenticação de Usuários:**
+   - O usuário envia suas credenciais (email/senha) para o servidor.
+   - O servidor valida as credenciais e retorna um token de acesso JWT.
+   - O token JWT é armazenado no lado do cliente e enviado junto com as solicitações subsequentes para autenticação.
+2. **Gestão de Hábitos:**
+   - O usuário envia solicitações para adicionar/editar/excluir hábitos.
+   - As solicitações são enviadas para a API utilizando o cliente Axios.
+   - O servidor processa as solicitações, valida os dados e atualiza o estado do hábito no banco de dados.
+3. **Rastreamento Diário:**
+   - O usuário marca os hábitos concluídos no dia atual.
+   - As atualizações são enviadas para a API e refletem no estado do hábito.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instalação e Configuração
+1. **Pré-requisitos:**
+   - Node.js
+   - npm ou Yarn
+2. **Passos de Instalação:**
+   - Clone o repositório do projeto.
+   - Instale as dependências usando npm ou Yarn.
+   - Configure as variáveis de ambiente necessárias, como a URL da API.
+   - Inicie o servidor de desenvolvimento com `npm start` ou `yarn start`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuindo
+- Para contribuir com o projeto, siga as diretrizes de contribuição definidas no arquivo CONTRIBUTING.md.
+- Se encontrar algum problema ou tiver sugestões de melhoria, por favor, abra uma issue no repositório do projeto.
