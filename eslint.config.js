@@ -14,9 +14,10 @@ export default [
       'no-undef': 'warn',
       'no-console': 'warn',
       'arrow-spacing': ['error', { before: true, after: true }],
+      'no-extra-parens': ['error', 'all', { nestedBinaryExpressions: false }],
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
       singleQuote: true,
       semi: ['error', 'always'],
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
   },
 ];
