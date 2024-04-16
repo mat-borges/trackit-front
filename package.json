@@ -28,6 +28,7 @@
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
       "pre-commit": "eslint --ext .js,.jsx,.ts,.tsx . --fix"
     }
   },
@@ -35,7 +36,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"No tests specified\"",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -50,6 +51,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "7.24.1",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.0.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.57.0",

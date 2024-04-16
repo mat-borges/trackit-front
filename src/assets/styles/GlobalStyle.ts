@@ -1,3 +1,9 @@
+import {
+  accentColor,
+  backgroundColor,
+  fontColor,
+} from '../../constants/colors';
+
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -47,11 +53,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	color: inherit;
+	color: ${fontColor};
 	line-height: 1.2;
 	font-size: 16px;
 	font-family: "Josefin Sans", sans-serif;
-	background-color: inherit;
+	background-color: ${backgroundColor};
+	a{
+		color: ${accentColor};
+		:visited{
+			color: inherit;
+		}
+	}
 
 }
 ol, ul {

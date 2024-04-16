@@ -3,7 +3,9 @@
   "singleQuote": true,
   "trailingComma": "all",
   "tabWidth": 2,
-  "jsxBracketSameLine": true,
+  "bracketSameLine": true,
   "arrowParens": "always",
+  "arrow-spacing": true,
+  "quoteProps": "consistent",
   "no-extra-parens": ["error", "all", { "nestedBinaryExpressions": false }]
 }
